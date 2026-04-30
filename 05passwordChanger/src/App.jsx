@@ -42,7 +42,15 @@ useEffect(()=>{
 
   
   return (
-      <div className="w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 my-8 bg-gray-600 text-orange-500">
+      <div 
+  style={{
+    backgroundImage: "url('https://img.freepik.com/free-photo/abstract-flowing-neon-wave-background_53876-101942.jpg?semt=ais_hybrid&w=740&q=80')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    height: "100vh"
+  }}
+  className="flex items-center justify-center"
+      className="w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 my-8 bg-gray-600 text-orange-500">
               <h1 className='text-white text-center my-3'>Password generator</h1>
               <div  className="flex shadow rounded-lg overflow-hidden mb-4 bg-white">
                  <input

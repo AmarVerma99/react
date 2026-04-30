@@ -9,15 +9,20 @@ function App() {
   let [counter,setCounter]=useState(15);
 
   const addValue =()=>{
-    if(counter==20) return;
-    counter=counter+1;
-    setCounter(counter);
+    if(counter>=20) return;
+    setCounter(prevCounter =>prevCounter+1);
+    setCounter(prevCounter =>prevCounter+1);
+    setCounter(prevCounter =>prevCounter+1);
+    setCounter(prevCounter =>prevCounter+1);
   }
   const removeValue =()=>{
-    if(counter!=0) {
-    counter=counter-1;
-    setCounter(counter);
-    }
+    if(counter<0) return
+       setCounter(prevCounter =>prevCounter-1);
+       setCounter(prevCounter =>prevCounter-1);
+       setCounter(prevCounter =>prevCounter-1);
+       setCounter(prevCounter =>prevCounter-1);
+
+    
   }
 
 
